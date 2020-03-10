@@ -6,7 +6,6 @@ from ssl import SSLContext, PROTOCOL_TLSv1
 from urllib.request import urlopen as url
 import datetime
 
-now = datetime.datetime.now()
 recognize = cv2.cv2.face.LBPHFaceRecognizer_create()
 recognize.read('trainer/trainer.yml')
 cascade = 'haarcascade_frontalface_default.xml'
@@ -16,6 +15,7 @@ webcamServerIP = 'https://192.168.1.93:8080/shot.jpg'
 
 while True:
 
+    now = datetime.datetime.now()
     contxt = SSLContext(PROTOCOL_TLSv1)
     inf = url(webcamServerIP, context=contxt).read()
     npImg = n.array(bytearray(inf), dtype=n.uint8)

@@ -31,5 +31,5 @@ while True:
     if key == 27:
         break
 
-    elif sampleCounter == 91:
+    elif sampleCounter > 90:
         break
