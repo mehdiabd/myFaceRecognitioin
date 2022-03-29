@@ -36,7 +36,7 @@ oauthlib==2.1.0
 olefile==0.46
 opencv-contrib-python==4.2.0.32
 opencv-python==4.2.0.32
-paramiko==2.6.0
+paramiko==2.10.1
 pexpect==4.6.0
 Pillow==6.1.0
 protobuf==3.6.1
